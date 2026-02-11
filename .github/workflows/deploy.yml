@@ -23,8 +23,9 @@ jobs:
           echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST << 'EOF'
+          rm -rf /app/*
           cd /app
-          git clone $REPO_URL . || git pull origin main
+          git clone $REPO_URL .
           docker build -t streamlit-app:latest .
           docker rm -f streamlit-container || true
           docker run -d -p 80:8501 --name streamlit-container streamlit-app:latest
