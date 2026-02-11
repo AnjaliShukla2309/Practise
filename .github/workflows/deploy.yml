@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  build and deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,5 +20,5 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           echo "$DEPLOY_KEY" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/id_rsa
-          ssh -i ~/.ssh/deplu_key $DEPLOY_USER@$DEPLOY_HOST "cd /app && docker pull && docker restart streamlit-container || docker run -d -p 80:8501 --name streamlit-container streamlit-app:latest"
+          chmod 600 ~/.ssh/deploy_key
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST "cd /app && docker pull && docker restart streamlit-container || docker run -d -p 80:8501 --name streamlit-container streamlit-app:latest"
