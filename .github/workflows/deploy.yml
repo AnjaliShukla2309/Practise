@@ -27,6 +27,7 @@ jobs:
             mkdir -p ~/app
             cd ~/app
             rm -rf *
+            rm -rf .*
             git clone $REPO_URL .
             docker build -t streamlit-app:latest .
             docker rm -f streamlit-container || true
