@@ -49,17 +49,24 @@ st.markdown(f"""
         margin: 0;
         padding: 0;
     }}
-    
-    /* Hide header */
+        
+    /* Fix Streamlit top header background */
     [data-testid="stHeader"] {{
+        background-color: {theme_colors['bg_main']} !important;
+    }}
+
+    
+    /* Hide Deploy button */
+    button[kind="header"] {{
         display: none !important;
     }}
-    
-    /* Hide Deploy and Menu buttons */
-    [data-testid="stToolbar"] {{
+
+    /* Hide three dots menu */
+    button[data-testid="baseButton-headerMenu"] {{
         display: none !important;
     }}
-    
+
+
     body {{
         background-color: {theme_colors['bg_main']} !important;
         color: {theme_colors['text_primary']} !important;
