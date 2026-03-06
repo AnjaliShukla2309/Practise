@@ -3,8 +3,8 @@ from datetime import datetime
 
 # Page Config
 st.set_page_config(
-    page_title="Anjali Shukla - Portfolio",
-    page_icon="👩‍💻",
+    page_title="Prakash Tiwari - Resume",
+    page_icon="👨‍💻",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -454,7 +454,7 @@ st.markdown(f"""
 with st.sidebar:
     col1, col2 = st.columns([0.7, 0.3])
     with col1:
-        st.image("https://via.placeholder.com/200x200?text=Anjali+Shukla", width=150, caption="Anjali Shukla")
+        st.image("https://via.placeholder.com/200x200?text=Prakash+Tiwari", width=150, caption="Prakash Tiwari")
     with col2:
         if st.button("🌙" if st.session_state.theme == "light" else "☀️", key="theme_toggle"):
             st.session_state.theme = "dark" if st.session_state.theme == "light" else "light"
@@ -480,10 +480,10 @@ with st.sidebar:
 # Header Section
 st.markdown("""
 <div class="header-section">
-    <h1>👩‍💻 ANJALI SHUKLA</h1>
-    <h3>Software Developer | AWS Certified | AI/ML Enthusiast</h3>
+    <h1>�‍💻 PRAKASH TIWARI</h1>
+    <h3>Salesforce Senior Engineer | 5x Certified | Full-Stack Developer</h3>
     <p style="margin-top: 20px; font-size: 16px;">
-        IT professional with 1+ years of experience in software development, cloud engineering, and automation
+        5x Salesforce Certified with 7 years of experience designing and developing scalable Salesforce solutions
     </p>
 </div>
 """, unsafe_allow_html=True)
@@ -492,38 +492,43 @@ st.markdown("""
 if st.session_state.selected_page == "📋 About":
     st.header("Professional Summary")
     st.write("""
-    An IT professional with 1+ years of experience in software development, cloud engineering, and automation. 
-    AWS Certified Developer with strong skills in AWS, Python, and AI-driven solutions. A proactive problem-solver 
-    and effective team collaborator focused on building scalable, high-quality systems.
+    5x Salesforce Certified with 7 years of experience in designing, developing, and implementing Salesforce 
+    solutions to streamline business processes and enhance customer engagement. Proficient in Salesforce 
+    development, customization, and integration, with expertise in modern web technologies including React.js, 
+    Node.js, TypeScript, and Java. Skilled in delivering high-quality CRM solutions, leveraging Apex, Visualforce, 
+    Lightning Web Components (LWC), and full-stack development frameworks.
     """)
     
     col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("📍 Personal Information")
-        st.write("**Date of Birth:** 23-July-2000")
-        st.write("**Languages:** Hindi, English")
-        st.write("**Location:** Hyderabad, Telangana, India")
+        st.subheader("📍 Contact Information")
+        st.write("**Mobile:** +91-8770430104")
+        st.write("**Email:** prakash-tiwari@outlook.com")
+        st.write("**LinkedIn:** www.linkedin.com/in/prakash-tiwari-/")
+        st.write("**Location:** Hyderabad, India")
     
     with col2:
         st.subheader("📚 Education")
-        st.write("**Master of Computer Applications (MCA)**")
-        st.write("AMC Engineering College, Bangalore | 2021 – 2023 | 85.2%")
+        st.write("**PG-DAC: Advanced Computing**")
+        st.write("CDAC ACTS Hyderabad | August 2018 – February 2019")
         st.write("")
-        st.write("**Bachelor of Computer Applications (BCA)**")
-        st.write("St. Aloysius College (Autonomous), Jabalpur, M.P. | 2018 – 2021 | 79.6%")
+        st.write("**M.Sc. in Computer Science**")
+        st.write("Guru Ghasidas Central University, Bilaspur | June 2015 - July 2017")
+        st.write("")
+        st.write("**B.Sc. in Computer Science**")
+        st.write("Guru Ghasidas Central University, Bilaspur | July 2012 - May 2015")
 
 # SKILLS PAGE
 elif st.session_state.selected_page == "🛠️ Skills":
     st.header("Technical Skills")
     
     skills_data = {
-        "Programming Languages": ["Python", "Java", "JavaScript", "HTML", "CSS", "Bootstrap"],
-        "Frameworks": ["Django", "Flask"],
-        "Databases": ["MongoDB", "SQL", "DynamoDB"],
-        "Cloud & DevOps": ["AWS Lambda", "S3", "API Gateway", "Cognito", "EC2", "IAM", "IoT Core", "Kinesis", "CloudTrail", "Jenkins", "CI/CD", "YAML Scripts"],
-        "AI/ML & Gen AI": ["NLP", "LLMs", "Hugging Face Transformers", "PyTorch"],
-        "Tools & Platforms": ["VS Code", "Jupyter Notebook", "Postman", "GIT", "Jira"]
+        "Salesforce Expertise": ["Apex Programming", "Lightning Web Components", "Visualforce Pages", "Process Automation", "Salesforce CPQ", "SOQL & SOSL", "REST & SOAP APIs", "Platform Events"],
+        "Web & App Development": ["React.js", "Node.js", "TypeScript", "JavaScript", "HTML", "CSS", "Java", "Express.js"],
+        "Cloud Services": ["Sales Cloud", "Service Cloud", "Salesforce Integration", "Email-to-Case", "Web-to-Case"],
+        "Development Tools": ["Git", "Bitbucket", "JIRA", "Postman", "Agile (Scrum)"],
+        "Data Management": ["Salesforce Reports", "Dashboards", "Data Loader", "Record Types", "Permission Sets"]
     }
     
     for category, skills in skills_data.items():
@@ -543,25 +548,52 @@ elif st.session_state.selected_page == "💼 Experience":
     
     st.markdown("""
     <div class="experience-card">
-        <h3 style="margin-bottom: 8px; color: #667eea;">Junior Software Engineer</h3>
-        <p style="margin: 6px 0; font-weight: 600; color: {theme_colors['text_primary']};">People Tech Group</p>
-        <p style="margin: 4px 0; color: {theme_colors['text_secondary']}; font-size: 14px;">Jan 2025 – Present</p>
-        <p style="margin-top: 12px; line-height: 1.6; color: {theme_colors['text_secondary']};">Developing scalable software solutions and contributing to cloud-based projects</p>
+        <h3 style="margin-bottom: 8px; color: #667eea;">Senior Engineer, Applications</h3>
+        <p style="margin: 6px 0; font-weight: 600; color: {theme_colors['text_primary']};">Accurate Background</p>
+        <p style="margin: 4px 0; color: {theme_colors['text_secondary']}; font-size: 14px;">Hyderabad, India | July 2025 – Present</p>
+        <ul style="margin-top: 12px; line-height: 1.8; color: {theme_colors['text_secondary']};">
+            <li>Design and develop scalable Salesforce Service Cloud solutions supporting background verification and customer support workflows</li>
+            <li>Implement Email-to-Case and Web-to-Case, configure Record Types, Support Processes, and Case Assignment Rules</li>
+            <li>Develop and maintain Apex Classes, Triggers, Lightning Web Components, and Flows for complex business logic automation</li>
+            <li>Configure Omni-Channel routing and integrated Amazon Connect Contact Center with Salesforce</li>
+        </ul>
     </div>
     """, unsafe_allow_html=True)
     
     st.markdown("""
     <div class="experience-card">
-        <h3 style="margin-bottom: 8px; color: #764ba2;">Software Developer Intern</h3>
-        <p style="margin: 6px 0; font-weight: 600; color: {theme_colors['text_primary']};">Netlabs Global IT Services</p>
-        <p style="margin: 4px 0; color: {theme_colors['text_secondary']}; font-size: 14px;">Dec 2023 – Feb 2024</p>
-        <p style="margin-top: 12px; line-height: 1.6; color: {theme_colors['text_secondary']};">Worked on web development projects and gained hands-on experience with modern frameworks</p>
+        <h3 style="margin-bottom: 8px; color: #667eea;">Senior Software Developer</h3>
+        <p style="margin: 6px 0; font-weight: 600; color: {theme_colors['text_primary']};">Qvantel Software Solutions Ltd.</p>
+        <p style="margin: 4px 0; color: {theme_colors['text_secondary']}; font-size: 14px;">Hyderabad, India | January 2022 – June 2025</p>
+        <ul style="margin-top: 12px; line-height: 1.8; color: {theme_colors['text_secondary']};">
+            <li>Designed and implemented Salesforce CRM solutions using Apex, Lightning Web Components, and Visualforce</li>
+            <li>Developed custom objects, validation rules, and automation to streamline business processes</li>
+            <li>Built React.js-based UI components integrated with Salesforce to improve application usability</li>
+            <li>Implemented and maintained REST/SOAP integrations with external systems for seamless data synchronization</li>
+        </ul>
     </div>
     """, unsafe_allow_html=True)
     
-    st.subheader("Extra-Curricular Activities")
-    st.write("**Placement Coordinator** – MCA Department, AMC Engineering College (2021–2023)")
-    st.write("**State-Level Taekwondo Player**")
+    st.markdown("""
+    <div class="experience-card">
+        <h3 style="margin-bottom: 8px; color: #764ba2;">Software Engineer</h3>
+        <p style="margin: 6px 0; font-weight: 600; color: {theme_colors['text_primary']};">SpinSci Technologies Pvt. Ltd.</p>
+        <p style="margin: 4px 0; color: {theme_colors['text_secondary']}; font-size: 14px;">Hyderabad, India | April 2019 – December 2021</p>
+        <ul style="margin-top: 12px; line-height: 1.8; color: {theme_colors['text_secondary']};">
+            <li>Designed and implemented custom Salesforce solutions using Apex, Lightning Web Components, and process automation tools</li>
+            <li>Developed and optimized flows, triggers, and Lightning Components to automate complex business processes</li>
+            <li>Developed scalable Node.js-based server-side applications and backend REST services using Express.js</li>
+            <li>Built responsive web applications using React, Redux, TypeScript, and Node.js</li>
+            <li>Led end-to-end application implementation strategies and provided technical mentorship to team members</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.subheader("Key Highlights")
+    st.write("✓ 5x Salesforce Certified Professional")
+    st.write("✓ Full-stack development expertise across Salesforce and modern web technologies")
+    st.write("✓ Strong track record of delivering scalable CRM solutions")
+    st.write("✓ Skilled in Agile methodologies and cross-functional team collaboration")
 
 # PROJECTS PAGE
 elif st.session_state.selected_page == "🚀 Projects":
@@ -569,28 +601,28 @@ elif st.session_state.selected_page == "🚀 Projects":
     
     projects = [
         {
-            "title": "Employee Data & Productivity Analytics Portal",
-            "description": "Built an analytics dashboard using Jira REST APIs to display real-time ticket progress, utilization metrics, and project health. Added date filters, downloadable views, and charts.",
-            "tech": ["Python", "Django", "Jira API", "SQL"],
-            "category": "Analytics"
+            "title": "Salesforce Sales Cloud Optimization",
+            "description": "Designed and developed a scalable Sales Cloud solution for a client, increasing lead conversion by 25%. Implemented custom workflows, automated reports, and enhanced dashboard functionality.",
+            "tech": ["Apex", "Lightning Components", "Visualforce"],
+            "category": "Sales Cloud"
         },
         {
-            "title": "Automated Smart Seating Allotment System",
-            "description": "Developed a seat & cabin booking system with real-time availability, floor maps, notifications, and admin controls. Implemented AI recommendations using PyTorch to suggest optimal seating based on proximity and booking patterns.",
-            "tech": ["Python", "Django", "SQL", "PyTorch"],
-            "category": "Booking System"
+            "title": "Custom LWC and React Application",
+            "description": "Built a hybrid Lightning Web Component and React-based application to manage service requests efficiently, reducing resolution time by 30%. Integrated with backend systems for real-time data synchronization.",
+            "tech": ["Lightning Web Components", "React.js", "Node.js"],
+            "category": "Full-Stack"
         },
         {
-            "title": "LEZGO - Vehicle Service Platform",
-            "description": "Built serverless backend APIs using AWS Lambda and API Gateway for ride booking and driver assignment. Designed DynamoDB models, integrated WhatsApp OTP messaging, managed secure S3 storage, and automated workflows using Step Functions.",
-            "tech": ["Lambda", "DynamoDB", "S3", "API Gateway", "CloudWatch", "Python", "WhatsApp API"],
-            "category": "Cloud Services"
+            "title": "Salesforce - ERP Integration",
+            "description": "Led the integration of Salesforce with a client's ERP system, ensuring real-time data synchronization and enhancing operational visibility. Implemented REST APIs and custom triggers for seamless data flow.",
+            "tech": ["REST APIs", "Apex", "SOAP"],
+            "category": "Integration"
         },
         {
-            "title": "Dialogue Summarizer using Transformer Model",
-            "description": "Fine-tuned Hugging Face model on the SAMSum dataset to generate conversational summaries. Implemented pre-processing, beam search decoding, and ROUGE-based evaluation.",
-            "tech": ["NLP", "LLM", "Hugging Face Transformers", "Python"],
-            "category": "AI/ML"
+            "title": "Node.js Data Processing for Salesforce",
+            "description": "Developed a Node.js backend to process and synchronize bulk Salesforce data, improving performance by 40%. Implemented batch processing and error handling mechanisms.",
+            "tech": ["Node.js", "Express.js", "Data Processing"],
+            "category": "Backend"
         }
     ]
     
@@ -646,24 +678,44 @@ elif st.session_state.selected_page == "🏆 Certifications":
     with col1:
         st.markdown("""
         <div class="cert-badge">
-            <h3>🏅 AWS Certified Developer – Associate</h3>
-            <p><b>AWS DVA-C02</b></p>
-            <p>Amazon Web Services, 2025</p>
+            <h3>🏅 Salesforce Certified Platform Developer II</h3>
+            <p>Salesforce, 2024</p>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="cert-badge">
-            <h3>📚 Programming Using Python</h3>
-            <p>Infosys Springboard, 2024</p>
+            <h3>🏅 Salesforce Certified Platform Developer I</h3>
+            <p>Salesforce, 2023</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div class="cert-badge">
+            <h3>🏅 Salesforce Certified JavaScript Developer</h3>
+            <p>Salesforce, 2023</p>
         </div>
         """, unsafe_allow_html=True)
     
     with col2:
         st.markdown("""
         <div class="cert-badge">
-            <h3>🚀 The Complete Full Stack Web Development Bootcamp</h3>
-            <p>Udemy, 2025</p>
+            <h3>🏅 Salesforce Certified Agentforce Specialist</h3>
+            <p>Salesforce, 2024</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div class="cert-badge">
+            <h3>🏅 Salesforce Certified AI Associate</h3>
+            <p>Salesforce, 2024</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div class="cert-badge">
+            <h3>🎓 School Representative Certificate</h3>
+            <p>Mathematical and Computer Science Department<br>Guru Ghasidas University, Bilaspur (C.G.), 2014-15</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -674,18 +726,19 @@ elif st.session_state.selected_page == "📞 Contact":
     st.markdown("""
     <div class="contact-info">
         <h3>📱 Contact Information</h3>
-        <p><b>Mobile:</b> +91 - 8970247261</p>
-        <p><b>Email:</b> shuklaanjali2307@gmail.com</p>
-        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/shukla-anjali" target="_blank">linkedin.com/in/shukla-anjali</a></p>
+        <p><b>Mobile:</b> +91-8770430104</p>
+        <p><b>Email:</b> prakash-tiwari@outlook.com</p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/prakash-tiwari-/" target="_blank">linkedin.com/in/prakash-tiwari-/</a></p>
+        <p><b>Location:</b> Hyderabad, India</p>
     </div>
     """, unsafe_allow_html=True)
     
     st.markdown("---")
     st.write("Feel free to reach out for:")
-    st.write("✓ Freelance projects")
-    st.write("✓ Full-time opportunities")
+    st.write("✓ Salesforce development opportunities")
+    st.write("✓ CRM solutions and consulting")
+    st.write("✓ Full-stack development projects")
     st.write("✓ Collaboration and partnerships")
-    st.write("✓ Any questions or discussions")
     
     st.markdown("---")
-    st.write("*Last updated: February 2025*")
+    st.write("*Last updated: March 2026*")
